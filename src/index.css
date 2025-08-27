@@ -1,0 +1,31 @@
+/* src/index.css */
+:root {
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #000;   /* fundo preto */
+  color: #fff;        /* texto branco */
+  font-family: Inter, system-ui, sans-serif;
+}
+
+/* Inputs em dark */
+input {
+  background: #111;
+  color: #fff;
+  border: 1px solid #333;
+}
+input::placeholder { color: #9aa0a6; }
+
+/* Botão: mantém contraste bom */
+button {
+  border: 1px solid #0284c7;
+  background: #0ea5e9;
+  color: #fff;
+  cursor: pointer;
+}
+button:hover { filter: brightness(1.1); }
+button:focus { outline: 2px solid #38bdf8; outline-offset: 2px; }
