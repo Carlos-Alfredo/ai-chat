@@ -8,7 +8,7 @@ export default function App() {
     { role: "model", text: "Oi! Sou sua IA. Em que posso ajudar?" },
   ]);
   const [input, setInput] = useState("");
-  const [fatal, setFatal] = useState<string | null>(null);
+  const [fatal] = useState<string | null>(null);
   const chatRef = useRef<ReturnType<typeof startChat> | null>(null);
 
   useEffect(() => {
