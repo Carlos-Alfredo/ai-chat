@@ -6,14 +6,17 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "start": "node server.js",
     "typecheck": "tsc -b",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
+    "express": "^5.1.0",
     "firebase": "^12.1.0",
     "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react-dom": "^19.1.1",
+    "sirv": "^3.0.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.33.0",
@@ -27,5 +30,6 @@
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.39.1",
     "vite": "^7.1.2"
-  }
+  },
+  "engines": { "node": ">=18" }
 }
